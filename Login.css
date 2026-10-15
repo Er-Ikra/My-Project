@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+/* 
+@media only screen and(max-width:455px) {
+    background:url(https://cbx-prod.b-cdn.net/COLOURBOX19067396.jpg?width=800&height=800&quality=70)
+} */  
+ /* after attach the media query we got error */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    /* background: url(https://cbx-prod.b-cdn.net/COLOURBOX19067396.jpg?width=800&height=800&quality=70); */
+
+    background: url(https://images.pexels.com/photos/1716158/pexels-photo-1716158.jpeg?cs=srgb&dl=pexels-tomfisk-1716158.jpg&fm=jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    width: 400px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0, 0, 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2 {
+    color: white;
+    text-transform: uppercase;
+    width: 20px;
+    font-size: 3em;
+
+}
+
+.form-group {
+    position: relative;
+    width: 330px;
+    margin: 30px 0;
+    border-bottom: 3px solid #fff;
+}
+
+.form-group input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    font-size: 1.2em;
+    color: #fff;
+    padding: 0 30px 0 10px;
+}
+
+.form-group lable {
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translate(-40%);
+    font-size: 1.2em;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+input:focus~lable,
+input:valid~lable {
+    top: 5px;
+}
+
+.form-group i {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1.2em;
+}
+
+p {
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+
+}
+
+p>a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+p>a:hover {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#btn {
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#btn:hover {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+}
